@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: #0f0f0f;
+    border-bottom: 1px solid #272727;
+}
+
+.header i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 22px;
+    margin-left: 16px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.center {
+    display: flex;
+    width: 40%;
+}
+
+.center input {
+    width: 100%;
+    padding: 8px;
+    background: #121212;
+    border: 1px solid #303030;
+    color: #fff;
+}
+
+.center button {
+    background: #222;
+    border: 1px solid #303030;
+    padding: 0 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    padding: 12px;
+    background: #0f0f0f;
+}
+
+.side-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.side-item:hover, .active {
+    background: #272727;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #272727;
+    margin: 12px 0;
+}
+
+.videos {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.video-info {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.channel-img {
+    border-radius: 50%;
+}
+
+.video-info h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.video-info p, .video-info span {
+    font-size: 12px;
+    color: #aaa;
+}
